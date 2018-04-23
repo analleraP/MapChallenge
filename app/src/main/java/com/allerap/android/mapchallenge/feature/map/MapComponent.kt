@@ -26,11 +26,14 @@ import com.google.android.gms.maps.model.LatLngBounds
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
 import kotlinx.android.synthetic.main.activity_map.*
-import kotlinx.android.synthetic.main.map_component_view.view.*
+import kotlinx.android.synthetic.main.activity_map.view.*
 import java.io.IOException
 
 
-class MapComponent(private val appCompatActivity: AppCompatActivity) : OnMapReadyCallback {
+class MapComponent(
+        private val appCompatActivity: AppCompatActivity,
+        private val onMapActionListener: OnMapActionListener
+) : OnMapReadyCallback {
 
     companion object {
 
@@ -39,6 +42,11 @@ class MapComponent(private val appCompatActivity: AppCompatActivity) : OnMapRead
         private const val PLACE_PICKER_REQUEST_TO = 3
 
         private const val CAMERA_CENTER_PADDING = 100
+    }
+
+    interface OnMapActionListener {
+        fun setOrigin(address: String)
+        fun setDestination(address: String)
     }
 
     private lateinit var map: GoogleMap
@@ -62,7 +70,7 @@ class MapComponent(private val appCompatActivity: AppCompatActivity) : OnMapRead
     fun initialize() {
         layout = appCompatActivity.mapView
         val view = LayoutInflater.from(appCompatActivity)
-                .inflate(R.layout.map_component_view, layout, false)
+                .inflate(R.layout.view_map, layout, false)
 
         layout.addView(view)
         val mapFragment = appCompatActivity
@@ -76,7 +84,7 @@ class MapComponent(private val appCompatActivity: AppCompatActivity) : OnMapRead
         if (requestCode == MapComponent.PLACE_PICKER_REQUEST_FROM) {
             val place = PlacePicker.getPlace(appCompatActivity, data)
 
-            layout.tvFrom.text = place.address.toString()
+            onMapActionListener.setOrigin(place.address.toString())
 
             removeMarker(originMarkerId)
             val title = appCompatActivity.getString(R.string.map_info_origin)
@@ -87,7 +95,7 @@ class MapComponent(private val appCompatActivity: AppCompatActivity) : OnMapRead
         } else if (requestCode == MapComponent.PLACE_PICKER_REQUEST_TO) {
             val place = PlacePicker.getPlace(appCompatActivity, data)
 
-            layout.tvTo.text = place.address.toString()
+            onMapActionListener.setDestination(place.address.toString())
 
             removeMarker(destinationMarkerId)
             val title = appCompatActivity.getString(R.string.map_info_destination)
@@ -102,12 +110,25 @@ class MapComponent(private val appCompatActivity: AppCompatActivity) : OnMapRead
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(appCompatActivity)
 
         map = googleMap
-        map.uiSettings.isZoomControlsEnabled = true
         map.setOnMarkerClickListener({
             false
         })
 
         setUpMap()
+    }
+
+    fun loadPlacePicker(isOrigin: Boolean) {
+
+        val requestCode = if (isOrigin) PLACE_PICKER_REQUEST_FROM else PLACE_PICKER_REQUEST_TO
+        val builder = PlacePicker.IntentBuilder()
+
+        try {
+            appCompatActivity.startActivityForResult(builder.build(appCompatActivity), requestCode)
+        } catch (e: GooglePlayServicesRepairableException) {
+            e.printStackTrace()
+        } catch (e: GooglePlayServicesNotAvailableException) {
+            e.printStackTrace()
+        }
     }
 
     private fun setUpMap() {
@@ -126,17 +147,9 @@ class MapComponent(private val appCompatActivity: AppCompatActivity) : OnMapRead
                 val currentLatLng = LatLng(location.latitude, location.longitude)
                 map.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLatLng, 12f))
 
-                layout.tvFrom.text = getAddress(currentLatLng)
+                onMapActionListener.setOrigin(getAddress(currentLatLng))
                 originMarkerId = placeMarkerOnMap("origin", currentLatLng)
             }
-        }
-
-        layout.tvFrom.setOnClickListener {
-            loadPlacePicker(MapComponent.PLACE_PICKER_REQUEST_FROM)
-        }
-
-        layout.tvTo.setOnClickListener {
-            loadPlacePicker(MapComponent.PLACE_PICKER_REQUEST_TO)
         }
     }
 
@@ -175,18 +188,6 @@ class MapComponent(private val appCompatActivity: AppCompatActivity) : OnMapRead
         }
 
         return addressText
-    }
-
-    private fun loadPlacePicker(requestCode: Int) {
-        val builder = PlacePicker.IntentBuilder()
-
-        try {
-            appCompatActivity.startActivityForResult(builder.build(appCompatActivity), requestCode)
-        } catch (e: GooglePlayServicesRepairableException) {
-            e.printStackTrace()
-        } catch (e: GooglePlayServicesNotAvailableException) {
-            e.printStackTrace()
-        }
     }
 
     private fun updateCameraPosition() {

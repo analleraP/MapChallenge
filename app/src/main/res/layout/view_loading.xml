@@ -1,0 +1,23 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutOverlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.6"
+    android:tag="layoutOverlay"
+    android:animateLayoutChanges="true"
+    android:background="#ffffff"
+    android:clickable="true"
+    android:focusable="true"
+    >
+
+  <ProgressBar
+      android:id="@+id/pbLoading"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:indeterminate="true"
+      style="?android:attr/progressBarStyle"
+      />
+
+</FrameLayout>
