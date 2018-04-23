@@ -1,12 +1,10 @@
 package com.allerap.android.mapchallenge.data.mappers
 
-import com.allerap.android.mapchallenge.data.entities.Eta
-import com.allerap.android.mapchallenge.data.entities.Icons
 import com.allerap.android.mapchallenge.data.entities.VehicleTypeEntity
 import com.allerap.android.mapchallenge.domain.entities.Vehicle
 import com.allerap.android.mapchallenge.feature.fake.FakeVehicle
 import com.allerap.android.mapchallenge.feature.fake.FakeVehicleTypeEntity
-import org.junit.Test
+import kotlin.test.Test
 import kotlin.test.BeforeTest
 import kotlin.test.assertEquals
 

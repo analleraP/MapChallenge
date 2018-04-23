@@ -2,7 +2,7 @@ package com.allerap.android.mapchallenge.data.mappers
 
 import com.allerap.android.mapchallenge.data.entities.ErrorEntity
 import com.allerap.android.mapchallenge.domain.entities.Error
-import org.junit.Test
+import kotlin.test.Test
 import kotlin.test.BeforeTest
 import kotlin.test.assertEquals
 
