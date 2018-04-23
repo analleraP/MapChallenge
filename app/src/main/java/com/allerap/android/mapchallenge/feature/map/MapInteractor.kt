@@ -4,7 +4,7 @@ import com.allerap.android.mapchallenge.CoroutineContextPool
 import com.allerap.android.mapchallenge.data.result.Result
 import com.allerap.android.mapchallenge.domain.Repository
 import com.allerap.android.mapchallenge.domain.entities.Error
-import com.allerap.android.mapchallenge.domain.entities.Journey
+import com.allerap.android.mapchallenge.domain.entities.Rate
 import com.allerap.android.mapchallenge.domain.entities.Stop
 import kotlinx.coroutines.experimental.async
 import kotlinx.coroutines.experimental.launch
@@ -14,7 +14,7 @@ class MapInteractor(private val contextPool: CoroutineContextPool,
 
     fun getEstimateJourney(origin: Stop,
                            destination: Stop,
-                           ui: (Result<List<Journey>, Error>) -> Unit
+                           ui: (Result<List<Rate>, Error>) -> Unit
     ) = launch(contextPool.ui) {
 
         val result = async(contextPool.bg) {

@@ -4,6 +4,7 @@ import android.app.Activity
 import android.app.Application
 import android.app.Service
 import com.allerap.android.mapchallenge.di.DaggerAppComponent
+import com.facebook.drawee.backends.pipeline.Fresco
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector
@@ -21,6 +22,7 @@ class App: Application(), HasActivityInjector, HasServiceInjector {
         super.onCreate()
 
         initDependencyInjection()
+        initImageManager()
     }
 
     override fun activityInjector(): AndroidInjector<Activity> = activityInjector
@@ -33,5 +35,9 @@ class App: Application(), HasActivityInjector, HasServiceInjector {
                 .application(this)
                 .build()
                 .inject(this)
+    }
+
+    private fun initImageManager() {
+        Fresco.initialize(this)
     }
 }

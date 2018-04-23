@@ -27,6 +27,7 @@ androidExtensions {
 }
 
 ext {
+    fresco_version = '1.8.0'
     maps_version = '15.0.0'
     dagger_version = '2.12'
     support_version = '27.0.2'
@@ -40,12 +41,16 @@ dependencies {
 
     // android support
     implementation "com.android.support:appcompat-v7:$support_version"
+    implementation "com.android.support:recyclerview-v7:$support_version"
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
 
     // google maps
     implementation "com.google.android.gms:play-services-maps:$maps_version"
     implementation "com.google.android.gms:play-services-location:$maps_version"
     implementation "com.google.android.gms:play-services-places:$maps_version"
+
+    // image
+    implementation "com.facebook.fresco:fresco:$fresco_version"
 
     // http client
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"

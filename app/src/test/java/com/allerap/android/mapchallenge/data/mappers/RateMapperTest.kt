@@ -2,8 +2,8 @@ package com.allerap.android.mapchallenge.data.mappers
 
 import com.allerap.android.mapchallenge.data.entities.RateEntity
 import com.allerap.android.mapchallenge.data.entities.VehicleTypeEntity
-import com.allerap.android.mapchallenge.domain.entities.Journey
-import com.allerap.android.mapchallenge.feature.fake.FakeJourney
+import com.allerap.android.mapchallenge.domain.entities.Rate
+import com.allerap.android.mapchallenge.feature.fake.FakeRate
 import com.allerap.android.mapchallenge.feature.fake.FakeVehicleTypeEntity
 import kotlin.test.Test
 import kotlin.test.BeforeTest
@@ -46,9 +46,9 @@ class RateMapperTest {
                 "12.34€")
     }
 
-    private fun givenARateModel(): Journey {
+    private fun givenARateModel(): Rate {
 
-        return FakeJourney().aJourney()
+        return FakeRate().aRate()
     }
 
     private fun givenAVehicleEntity(): VehicleTypeEntity = FakeVehicleTypeEntity().aVehicleTypeEntity()

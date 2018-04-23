@@ -2,10 +2,10 @@ package com.allerap.android.mapchallenge.feature.map
 
 import com.allerap.android.mapchallenge.data.result.Ok
 import com.allerap.android.mapchallenge.domain.Repository
-import com.allerap.android.mapchallenge.domain.entities.Journey
+import com.allerap.android.mapchallenge.domain.entities.Rate
 import com.allerap.android.mapchallenge.extensions.whenever
 import com.allerap.android.mapchallenge.feature.TestCoroutineContextPool
-import com.allerap.android.mapchallenge.feature.fake.FakeJourney
+import com.allerap.android.mapchallenge.feature.fake.FakeRate
 import com.allerap.android.mapchallenge.feature.fake.FakeStop
 import kotlin.test.Test
 import org.mockito.Mockito.mock
@@ -29,8 +29,8 @@ class MapInteractorTest {
                 .estimateJourney(FakeStop().aStopListOfTwo())
     }
 
-    private fun givenThereAreJourneys(): List<Journey> {
-        val journeys = FakeJourney().someJourneys()
+    private fun givenThereAreJourneys(): List<Rate> {
+        val journeys = FakeRate().someRates()
 
         whenever(repository.estimateJourney(FakeStop().aStopListOfTwo()))
                 .thenReturn(Ok(journeys))

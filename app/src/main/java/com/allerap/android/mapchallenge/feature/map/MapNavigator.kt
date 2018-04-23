@@ -1,11 +1,12 @@
 package com.allerap.android.mapchallenge.feature.map
 
 import android.content.Context
-import com.allerap.android.mapchallenge.domain.entities.Journey
-import com.allerap.android.mapchallenge.feature.journeys.journeysIntent
+import com.allerap.android.mapchallenge.domain.entities.Rate
+import com.allerap.android.mapchallenge.feature.rate.ratesIntent
 
 class MapNavigator(private val context: Context)  {
 
-    fun toJourneyListScreen(journeys: List<Journey>) {
+    fun toJourneyListScreen(rates: List<Rate>) {
+        context.startActivity(context.ratesIntent(rates))
     }
 }
