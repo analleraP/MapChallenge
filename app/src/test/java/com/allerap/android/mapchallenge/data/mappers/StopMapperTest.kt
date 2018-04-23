@@ -2,6 +2,7 @@ package com.allerap.android.mapchallenge.data.mappers
 
 import com.allerap.android.mapchallenge.data.entities.StopEntity
 import com.allerap.android.mapchallenge.domain.entities.Stop
+import com.allerap.android.mapchallenge.feature.fake.FakeStop
 import org.junit.Test
 import kotlin.test.BeforeTest
 import kotlin.test.assertEquals
@@ -41,6 +42,6 @@ class StopMapperTest {
 
     private fun givenAStopModel(): Stop {
 
-        return Stop(40.41133490000001, -3.6749081)
+        return FakeStop().aStop()
     }
 }
