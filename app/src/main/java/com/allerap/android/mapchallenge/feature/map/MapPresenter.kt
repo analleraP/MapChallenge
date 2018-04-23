@@ -13,8 +13,6 @@ class MapPresenter(private val view: MapView,
             origin: LatLng,
             destination: LatLng) {
 
-        view.showLoading()
-
         getEstimateJourney(origin, destination)
     }
 
@@ -24,8 +22,6 @@ class MapPresenter(private val view: MapView,
     ) = interactor.getEstimateJourney(
             Stop(origin.latitude, origin.longitude),
             Stop(destination.latitude, destination.longitude)) {
-
-        view.hideLoading()
 
         it.onSuccess {
             navigator.toJourneyListScreen(it)
