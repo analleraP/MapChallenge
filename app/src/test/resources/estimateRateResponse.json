@@ -1,0 +1,418 @@
+[
+  {
+    "vehicle_type": {
+      "_id": "330997a2df70ac21705634b938313873",
+      "name": "Cabify Dev Test",
+      "short_name": "Dev Test",
+      "description": "This product is intended for testing purposes",
+      "icon": "rickshaw",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/rickshaw_54.png"
+      }
+    },
+    "product": {
+      "_id": "330997a2df70ac21705634b938313873",
+      "name": "Cabify Dev Test",
+      "short_name": "Dev Test",
+      "description": "This product is intended for testing purposes",
+      "icon": "rickshaw",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/rickshaw_54.png"
+      }
+    },
+    "total_price": 700,
+    "currency": "EUR",
+    "currency_symbol": "€",
+    "price_formatted": "7.00 €"
+  },
+  {
+    "vehicle_type": {
+      "_id": "e55515f07913f30f12908fc050401f98",
+      "name": "Cabify Lite",
+      "short_name": "Lite",
+      "description": "The standard option, with all the usual perks",
+      "icon": "lite",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/lite_54.png"
+      }
+    },
+    "product": {
+      "_id": "e55515f07913f30f12908fc050401f98",
+      "name": "Cabify Lite",
+      "short_name": "Lite",
+      "description": "The standard option, with all the usual perks",
+      "icon": "lite",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/lite_54.png"
+      }
+    },
+    "total_price": 715,
+    "currency": "EUR",
+    "currency_symbol": "€",
+    "price_formatted": "7.15 €"
+  },
+  {
+    "vehicle_type": {
+      "_id": "02b41272f21cac1ec74f0a1de67bfb3b",
+      "name": "Baby",
+      "short_name": "Baby",
+      "description": "Specify car seat when ordering. Group 0 only via reservation + 5€",
+      "icon": "baby",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/baby_54.png"
+      }
+    },
+    "product": {
+      "_id": "02b41272f21cac1ec74f0a1de67bfb3b",
+      "name": "Baby",
+      "short_name": "Baby",
+      "description": "Specify car seat when ordering. Group 0 only via reservation + 5€",
+      "icon": "baby",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/baby_54.png"
+      }
+    },
+    "total_price": 700,
+    "currency": "EUR",
+    "currency_symbol": "€",
+    "price_formatted": "7.00 €"
+  },
+  {
+    "vehicle_type": {
+      "_id": "bb4944bdade2e989e121e16f02ed0c86",
+      "name": "Cabify Corporate",
+      "short_name": "Corporate",
+      "description": "The standard option, with all the usual perks.",
+      "icon": "lite",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/lite_54.png"
+      }
+    },
+    "product": {
+      "_id": "bb4944bdade2e989e121e16f02ed0c86",
+      "name": "Cabify Corporate",
+      "short_name": "Corporate",
+      "description": "The standard option, with all the usual perks.",
+      "icon": "lite",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/lite_54.png"
+      }
+    },
+    "total_price": 700,
+    "currency": "EUR",
+    "currency_symbol": "€",
+    "price_formatted": "7.00 €"
+  },
+  {
+    "vehicle_type": {
+      "_id": "330997a2df70ac21705634b938312f88",
+      "name": "Cabify Access",
+      "short_name": "Access",
+      "description": "Wheelchair accessible vehicles",
+      "icon": "access",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/access_54.png"
+      }
+    },
+    "product": {
+      "_id": "330997a2df70ac21705634b938312f88",
+      "name": "Cabify Access",
+      "short_name": "Access",
+      "description": "Wheelchair accessible vehicles",
+      "icon": "access",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/access_54.png"
+      }
+    },
+    "total_price": 700,
+    "currency": "EUR",
+    "currency_symbol": "€",
+    "price_formatted": "7.00 €"
+  },
+  {
+    "vehicle_type": {
+      "_id": "5e6df97e51ee948302db6150142df794",
+      "name": "Cabify Electric",
+      "short_name": "Electric",
+      "description": "A more eco-friendly way to ride. 3 pax",
+      "icon": "electric",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/electric_54.png"
+      }
+    },
+    "product": {
+      "_id": "5e6df97e51ee948302db6150142df794",
+      "name": "Cabify Electric",
+      "short_name": "Electric",
+      "description": "A more eco-friendly way to ride. 3 pax",
+      "icon": "electric",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/electric_54.png"
+      }
+    },
+    "total_price": 700,
+    "currency": "EUR",
+    "currency_symbol": "€",
+    "price_formatted": "7.00 €"
+  },
+  {
+    "vehicle_type": {
+      "_id": "9393ddaa6e78a0d2071d0e1438450997",
+      "name": "Cabify Executive",
+      "short_name": "Executive",
+      "description": "Luxury cars, Mercedes E-Class or similar. ",
+      "icon": "executive",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/executive_54.png"
+      }
+    },
+    "product": {
+      "_id": "9393ddaa6e78a0d2071d0e1438450997",
+      "name": "Cabify Executive",
+      "short_name": "Executive",
+      "description": "Luxury cars, Mercedes E-Class or similar. ",
+      "icon": "executive",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/executive_54.png"
+      }
+    },
+    "total_price": 700,
+    "currency": "EUR",
+    "currency_symbol": "€",
+    "price_formatted": "7.00 €"
+  },
+  {
+    "vehicle_type": {
+      "_id": "1e98ec1e39f491ee9c97d1874bb394ee",
+      "name": "EcoTaxi",
+      "short_name": "Ecotaxi",
+      "description": "Electric taxi, priced on the meter.",
+      "icon": "taxi",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/taxi_54.png"
+      }
+    },
+    "product": {
+      "_id": "1e98ec1e39f491ee9c97d1874bb394ee",
+      "name": "EcoTaxi",
+      "short_name": "Ecotaxi",
+      "description": "Electric taxi, priced on the meter.",
+      "icon": "taxi",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/taxi_54.png"
+      }
+    },
+    "total_price": null,
+    "currency": null,
+    "currency_symbol": null,
+    "price_formatted": "N/A"
+  },
+  {
+    "vehicle_type": {
+      "_id": "330997a2df70ac21705634b938313a87",
+      "name": "Cabify Group",
+      "short_name": "Group",
+      "description": "Larger vehicles that can fit up to 6 passengers.",
+      "icon": "group",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/group_54.png"
+      }
+    },
+    "product": {
+      "_id": "330997a2df70ac21705634b938313a87",
+      "name": "Cabify Group",
+      "short_name": "Group",
+      "description": "Larger vehicles that can fit up to 6 passengers.",
+      "icon": "group",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/group_54.png"
+      }
+    },
+    "total_price": 700,
+    "currency": "EUR",
+    "currency_symbol": "€",
+    "price_formatted": "7.00 €"
+  },
+  {
+    "vehicle_type": {
+      "_id": "e1e38b9fa071abc2d6cb3fe2dc69750b",
+      "name": "Travel Group",
+      "short_name": "Travel Group",
+      "description": "Larger vehicles that can fit up to 6 passengers.",
+      "icon": "group",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/group_54.png"
+      }
+    },
+    "product": {
+      "_id": "e1e38b9fa071abc2d6cb3fe2dc69750b",
+      "name": "Travel Group",
+      "short_name": "Travel Group",
+      "description": "Larger vehicles that can fit up to 6 passengers.",
+      "icon": "group",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/group_54.png"
+      }
+    },
+    "total_price": 700,
+    "currency": "EUR",
+    "currency_symbol": "€",
+    "price_formatted": "7.00 €"
+  },
+  {
+    "vehicle_type": {
+      "_id": "192a6eedba9a22b100dd62cb838686be",
+      "name": "bajas",
+      "short_name": "bajas",
+      "description": "bajas",
+      "icon": "kitkat",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/kitkat_54.png"
+      }
+    },
+    "product": {
+      "_id": "192a6eedba9a22b100dd62cb838686be",
+      "name": "bajas",
+      "short_name": "bajas",
+      "description": "bajas",
+      "icon": "kitkat",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/kitkat_54.png"
+      }
+    },
+    "total_price": 700,
+    "currency": "EUR",
+    "currency_symbol": "€",
+    "price_formatted": "7.00 €"
+  },
+  {
+    "vehicle_type": {
+      "_id": "e1e38b9fa071abc2d6cb3fe2dc69830c",
+      "name": "Travel Executive",
+      "short_name": "Travel Executive",
+      "description": "Luxury cars, Mercedes E-Class or similar.",
+      "icon": "executive",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/executive_54.png"
+      }
+    },
+    "product": {
+      "_id": "e1e38b9fa071abc2d6cb3fe2dc69830c",
+      "name": "Travel Executive",
+      "short_name": "Travel Executive",
+      "description": "Luxury cars, Mercedes E-Class or similar.",
+      "icon": "executive",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/executive_54.png"
+      }
+    },
+    "total_price": 700,
+    "currency": "EUR",
+    "currency_symbol": "€",
+    "price_formatted": "7.00 €"
+  },
+  {
+    "vehicle_type": {
+      "_id": "97706bcf13e0016ebe7e2b91501fad19",
+      "name": "only API",
+      "short_name": "only API",
+      "description": "only API",
+      "icon": "pet",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/pet_54.png"
+      }
+    },
+    "product": {
+      "_id": "97706bcf13e0016ebe7e2b91501fad19",
+      "name": "only API",
+      "short_name": "only API",
+      "description": "only API",
+      "icon": "pet",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/pet_54.png"
+      }
+    },
+    "total_price": 700,
+    "currency": "EUR",
+    "currency_symbol": "€",
+    "price_formatted": "7.00 €"
+  },
+  {
+    "vehicle_type": {
+      "_id": "8d350e8b23cfd8725c07f0791e5eddb0",
+      "name": "Cash/POS 2.0",
+      "short_name": "Cash/POS",
+      "description": "Cash/POS 2.0",
+      "icon": "cash",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/cash_54.png"
+      }
+    },
+    "product": {
+      "_id": "8d350e8b23cfd8725c07f0791e5eddb0",
+      "name": "Cash/POS 2.0",
+      "short_name": "Cash/POS",
+      "description": "Cash/POS 2.0",
+      "icon": "cash",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/cash_54.png"
+      }
+    },
+    "total_price": 603,
+    "currency": "EUR",
+    "currency_symbol": "€",
+    "price_formatted": "6.03 €"
+  },
+  {
+    "vehicle_type": {
+      "_id": "bce9cb8400fdba7556a492500839eba3",
+      "name": "Delivery",
+      "short_name": "Delivery",
+      "description": "Delivery",
+      "icon": "bike",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/bike_54.png"
+      }
+    },
+    "product": {
+      "_id": "bce9cb8400fdba7556a492500839eba3",
+      "name": "Delivery",
+      "short_name": "Delivery",
+      "description": "Delivery",
+      "icon": "bike",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/bike_54.png"
+      }
+    },
+    "total_price": 700,
+    "currency": "EUR",
+    "currency_symbol": "€",
+    "price_formatted": "7.00 €"
+  },
+  {
+    "vehicle_type": {
+      "_id": "5c5501d26d69d6bf9db9e4ec4cb9600d",
+      "name": "Debito cash 1.0",
+      "short_name": "Debito",
+      "description": "Debito cash 1.0",
+      "icon": "cash",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/cash_54.png"
+      }
+    },
+    "product": {
+      "_id": "5c5501d26d69d6bf9db9e4ec4cb9600d",
+      "name": "Debito cash 1.0",
+      "short_name": "Debito",
+      "description": "Debito cash 1.0",
+      "icon": "cash",
+      "icons": {
+        "regular": "https://test.cabify.com/images/icons/vehicle_type/cash_54.png"
+      }
+    },
+    "total_price": 700,
+    "currency": "EUR",
+    "currency_symbol": "€",
+    "price_formatted": "7.00 €"
+  }
+]
